@@ -9,27 +9,27 @@ export default function Header() {
   return (
     <header className="relative flex items-center justify-between px-5 md:px-10 lg:px-20 py-5 w-full">
       {/* Logo */}
-      <div className="flex items-center gap-2">
+      <a href="/" className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-lg bg-[var(--l-accent)] flex items-center justify-center">
           <span className="font-serif text-white text-lg">S</span>
         </div>
         <span className="font-serif text-[var(--l-text-primary)] text-[22px]">
           Saph
         </span>
-      </div>
+      </a>
 
       {/* Nav - hidden on mobile */}
       <nav className="hidden md:flex items-center gap-9">
-        <a href="#use-cases" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
+        <a href="/#use-cases" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
           Use Cases
         </a>
-        <a href="#how-it-works" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
+        <a href="/#how-it-works" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
           How It Works
         </a>
-        <a href="#features" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
+        <a href="/#features" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
           Features
         </a>
-        <a href="#docs" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
+        <a href="/#docs" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
           Docs
         </a>
       </nav>
@@ -59,16 +59,16 @@ export default function Header() {
       {/* Mobile drawer */}
       {mobileOpen && (
         <div className="absolute top-full left-0 right-0 z-50 flex flex-col gap-4 bg-white border-b border-[var(--l-border)] px-5 py-6 md:hidden">
-          <a href="#use-cases" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
+          <a href="/#use-cases" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
             Use Cases
           </a>
-          <a href="#how-it-works" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
+          <a href="/#how-it-works" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
             How It Works
           </a>
-          <a href="#features" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
+          <a href="/#features" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
             Features
           </a>
-          <a href="#docs" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
+          <a href="/#docs" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
             Docs
           </a>
           <hr className="border-[var(--l-border)]" />
