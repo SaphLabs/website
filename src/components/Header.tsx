@@ -29,9 +29,9 @@ export default function Header() {
         <a href="/#features" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
           Features
         </a>
-        <a href="/#docs" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
-          Docs
-        </a>
+        <span className="font-sans text-sm text-[var(--l-text-secondary)] cursor-default">
+          Docs <span className="text-[10px] text-[var(--l-text-muted)]">(coming soon)</span>
+        </span>
       </nav>
 
       {/* Actions - hidden on mobile */}
@@ -65,9 +65,9 @@ export default function Header() {
           <a href="/#features" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
             Features
           </a>
-          <a href="/#docs" className="font-sans text-sm text-[var(--l-text-secondary)]" onClick={() => setMobileOpen(false)}>
-            Docs
-          </a>
+          <span className="font-sans text-sm text-[var(--l-text-secondary)]">
+            Docs <span className="text-[10px] text-[var(--l-text-muted)]">(coming soon)</span>
+          </span>
           <hr className="border-[var(--l-border)]" />
           <a
             href="/contact"
