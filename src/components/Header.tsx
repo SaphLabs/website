@@ -36,9 +36,6 @@ export default function Header() {
 
       {/* Actions - hidden on mobile */}
       <div className="hidden md:flex items-center gap-4">
-        <a href="#" className="font-sans text-sm text-[var(--l-text-secondary)] hover:text-[var(--l-text-primary)] transition-colors">
-          Log in
-        </a>
         <a
           href="/contact"
           className="font-sans text-sm font-medium text-white bg-[var(--l-accent)] rounded-lg px-6 py-2.5 hover:opacity-90 transition-opacity"
@@ -72,9 +69,6 @@ export default function Header() {
             Docs
           </a>
           <hr className="border-[var(--l-border)]" />
-          <a href="#" className="font-sans text-sm text-[var(--l-text-secondary)]">
-            Log in
-          </a>
           <a
             href="/contact"
             className="font-sans text-sm font-medium text-white bg-[var(--l-accent)] rounded-lg px-6 py-2.5 text-center hover:opacity-90 transition-opacity"
