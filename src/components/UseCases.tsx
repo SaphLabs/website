@@ -11,7 +11,7 @@ interface UseCaseCardProps {
 
 function UseCaseCard({ icon: Icon, iconBg, iconColor, title, description }: UseCaseCardProps) {
   return (
-    <div className="flex-1 flex flex-col gap-4 rounded-2xl border border-[var(--l-border)] p-7">
+    <div className="flex flex-col gap-4 rounded-2xl border border-[var(--l-border)] p-7">
       <div
         className="w-10 h-10 rounded-[10px] flex items-center justify-center"
         style={{ backgroundColor: iconBg }}
@@ -28,17 +28,17 @@ function UseCaseCard({ icon: Icon, iconBg, iconColor, title, description }: UseC
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="flex flex-col items-center gap-12 p-20 w-full">
+    <section id="use-cases" className="flex flex-col items-center gap-12 p-5 md:p-12 lg:p-20 w-full">
       <div className="flex items-center rounded-full bg-[var(--l-bg-subtle)] border border-[var(--l-border)] px-3.5 py-1.5">
         <span className="font-sans text-[11px] font-semibold tracking-[1.5px] text-[var(--l-text-muted)]">
           USE CASES
         </span>
       </div>
-      <h2 className="font-serif text-[42px] text-[var(--l-text-primary)] text-center">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-[42px] text-[var(--l-text-primary)] text-center">
         What you can do with it
       </h2>
 
-      <div className="flex gap-5 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 w-full">
         <UseCaseCard
           icon={Bug}
           iconBg="var(--l-accent-light)"

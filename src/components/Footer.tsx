@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="flex items-start justify-between px-20 py-12 w-full">
+    <footer className="flex flex-col md:flex-row items-start gap-8 md:justify-between px-5 md:px-12 lg:px-20 py-8 md:py-12 w-full">
       {/* Brand */}
-      <div className="flex flex-col gap-3 w-[300px]">
+      <div className="flex flex-col gap-3 w-full md:w-[300px]">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-md bg-[var(--l-accent)] flex items-center justify-center">
             <span className="font-serif text-[13px] text-white">S</span>
@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
 
       {/* Nav columns */}
-      <div className="flex gap-16">
+      <div className="grid grid-cols-3 gap-6 md:gap-16">
         <div className="flex flex-col gap-3">
           <span className="font-sans text-xs font-semibold text-[var(--l-text-primary)]">Product</span>
           <a href="#" className="font-sans text-xs text-[var(--l-text-muted)] hover:text-[var(--l-text-secondary)] transition-colors">Sandbox</a>

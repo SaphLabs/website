@@ -21,8 +21,8 @@ function SecurityCard({ icon: Icon, title, description }: SecurityCardProps) {
 
 export default function SecuritySection() {
   return (
-    <section className="flex flex-col items-center gap-12 bg-[var(--l-bg-subtle)] px-[120px] py-20 w-full">
-      <h2 className="font-serif text-[42px] text-[var(--l-text-primary)] text-center max-w-[700px]">
+    <section className="flex flex-col items-center gap-12 bg-[var(--l-bg-subtle)] px-5 md:px-16 lg:px-[120px] py-20 w-full">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-[42px] text-[var(--l-text-primary)] text-center max-w-[700px]">
         Security that doesn&apos;t rely
         on &ldquo;please behave&rdquo;
       </h2>
@@ -31,7 +31,7 @@ export default function SecuritySection() {
         will eventually do something weird and designs around that.
       </p>
 
-      <div className="flex gap-5 w-full">
+      <div className="flex flex-col md:flex-row gap-5 w-full">
         <SecurityCard
           icon={Shield}
           title="Isolation"

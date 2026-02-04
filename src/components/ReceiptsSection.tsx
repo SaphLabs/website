@@ -1,6 +1,6 @@
 export default function ReceiptsSection() {
   return (
-    <section className="flex items-center gap-16 p-20 w-full">
+    <section className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16 p-5 md:p-12 lg:p-20 w-full">
       {/* Left - Text */}
       <div className="flex flex-col gap-6 flex-1">
         <div className="flex items-center rounded-full bg-[var(--l-blue-light)] px-3.5 py-1.5 w-fit">
@@ -8,7 +8,7 @@ export default function ReceiptsSection() {
             AUDIT ARTIFACTS
           </span>
         </div>
-        <h2 className="font-serif text-[38px] text-[var(--l-text-primary)] leading-tight">
+        <h2 className="font-serif text-2xl md:text-3xl lg:text-[38px] text-[var(--l-text-primary)] leading-tight">
           Every run produces
           <br />
           an audit artifact
@@ -19,7 +19,7 @@ export default function ReceiptsSection() {
       </div>
 
       {/* Right - JSON Card */}
-      <div className="flex flex-col gap-1.5 rounded-2xl bg-[var(--l-bg-subtle)] border border-[var(--l-border)] p-7 w-[460px] shrink-0">
+      <div className="flex flex-col gap-1.5 rounded-2xl bg-[var(--l-bg-subtle)] border border-[var(--l-border)] p-7 w-full lg:w-[460px] lg:shrink-0 overflow-x-auto">
         <span className="font-sans text-[10px] font-semibold tracking-wider text-[var(--l-blue)]">
           Execution Receipt
         </span>

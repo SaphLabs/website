@@ -2,10 +2,10 @@ import { Check } from "lucide-react";
 
 export default function CapabilitySection() {
   return (
-    <section id="features" className="flex items-center gap-16 p-20 w-full">
+    <section id="features" className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 p-5 md:p-12 lg:p-20 w-full">
       {/* Left - Illustration */}
       <div
-        className="flex flex-col gap-2.5 rounded-2xl border border-[var(--l-border)] p-8 w-[520px] shrink-0 h-[420px]"
+        className="flex flex-col gap-2.5 rounded-2xl border border-[var(--l-border)] p-8 w-full lg:w-[520px] lg:shrink-0 h-[420px]"
         style={{
           background: "radial-gradient(circle, #F3E8FF, #FAFAFA)",
         }}
@@ -63,7 +63,7 @@ export default function CapabilitySection() {
             SECURITY MODEL
           </span>
         </div>
-        <h2 className="font-serif text-[38px] text-[var(--l-text-primary)] leading-tight">
+        <h2 className="font-serif text-2xl md:text-3xl lg:text-[38px] text-[var(--l-text-primary)] leading-tight">
           Nothing is allowed
           <br />
           unless you grant it

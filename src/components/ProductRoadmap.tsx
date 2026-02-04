@@ -1,7 +1,7 @@
 export default function ProductRoadmap() {
   return (
-    <section className="flex flex-col items-center gap-12 p-20 w-full">
-      <h2 className="font-serif text-[42px] text-[var(--l-text-primary)] text-center">
+    <section className="flex flex-col items-center gap-12 p-5 md:p-12 lg:p-20 w-full">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-[42px] text-[var(--l-text-primary)] text-center">
         Runtime now, control later
       </h2>
       <p className="font-sans text-[15px] text-[var(--l-text-tertiary)] text-center">
@@ -9,24 +9,24 @@ export default function ProductRoadmap() {
       </p>
 
       {/* Layers */}
-      <div className="flex flex-col w-[700px]">
+      <div className="flex flex-col w-full max-w-[700px]">
         {/* Layer 1 - Runtime */}
-        <div className="flex items-center justify-between rounded-t-2xl bg-[var(--l-accent-light)] border-[1.5px] border-[var(--l-accent)] px-9 py-7">
+        <div className="flex items-center justify-between rounded-t-2xl bg-[var(--l-accent-light)] border-[1.5px] border-[var(--l-accent)] px-5 md:px-9 py-5 md:py-7">
           <div className="flex flex-col gap-1">
             <span className="font-serif text-[22px] text-[var(--l-accent)]">Saph Runtime</span>
             <span className="font-sans text-[13px] text-[var(--l-text-tertiary)]">
               Sandbox + Replay
             </span>
           </div>
-          <div className="flex items-center rounded-lg bg-[var(--l-accent)] px-5 py-2">
+          <a href="/contact" className="flex items-center rounded-lg bg-[var(--l-accent)] px-5 py-2 hover:opacity-90 transition-opacity">
             <span className="font-sans text-[13px] font-medium text-white">
               Start here →
             </span>
-          </div>
+          </a>
         </div>
 
         {/* Layer 2 - Control */}
-        <div className="flex items-center justify-between rounded-b-2xl bg-white border border-[var(--l-border)] px-9 py-7">
+        <div className="flex items-center justify-between rounded-b-2xl bg-white border border-[var(--l-border)] px-5 md:px-9 py-5 md:py-7">
           <div className="flex flex-col gap-1">
             <span className="font-serif text-[22px] text-[var(--l-text-secondary)]">Saph Control</span>
             <span className="font-sans text-[13px] text-[var(--l-text-muted)]">

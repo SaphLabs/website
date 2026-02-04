@@ -31,7 +31,7 @@ function StatCard({ icon: Icon, iconBg, iconColor, number, label, description }:
 
 export default function Stats() {
   return (
-    <section className="flex gap-6 px-20 py-[60px] w-full">
+    <section className="flex flex-col md:flex-row gap-6 px-5 md:px-12 lg:px-20 py-10 md:py-[60px] w-full">
       <StatCard
         icon={Zap}
         iconBg="var(--l-accent-light)"

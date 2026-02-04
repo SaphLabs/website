@@ -1,18 +1,18 @@
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="flex flex-col items-center gap-12 p-20 w-full">
+    <section id="how-it-works" className="flex flex-col items-center gap-12 p-5 md:p-12 lg:p-20 w-full">
       {/* Badge + Title */}
       <div className="flex items-center rounded-full bg-[var(--l-bg-subtle)] border border-[var(--l-border)] px-3.5 py-1.5">
         <span className="font-sans text-[11px] font-semibold tracking-[1.5px] text-[var(--l-text-muted)]">
           HOW IT WORKS
         </span>
       </div>
-      <h2 className="font-serif text-[42px] text-[var(--l-text-primary)] text-center">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-[42px] text-[var(--l-text-primary)] text-center">
         Three parts, one contract
       </h2>
 
       {/* Cards */}
-      <div className="flex gap-5 w-full">
+      <div className="flex flex-col md:flex-row gap-5 w-full">
         {/* Card 1 - Sandboxed Runtime */}
         <div className="flex-1 flex flex-col rounded-2xl border border-[var(--l-border)] overflow-hidden bg-[var(--l-bg)]">
           <div
